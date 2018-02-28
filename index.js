@@ -133,7 +133,7 @@ module.exports.requestLogger = function (opts) {
     requestData = updateFields(ctx, opts.updateLogFields, requestData);
     requestData = updateFields(ctx, opts.updateRequestLogFields, requestData);
 
-    ctx.log.info(requestData, formatRequestMessage.call(ctx, requestData));
+    //ctx.log.info(requestData, formatRequestMessage.call(ctx, requestData));
 
     var startTime = new Date().getTime();
     var err;
